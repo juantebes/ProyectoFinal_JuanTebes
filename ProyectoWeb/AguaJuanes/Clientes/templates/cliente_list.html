@@ -1,0 +1,9 @@
+{% extends "padre.html" %}
+
+{% block titulo %} 
+{% for cliente in object_list %}
+<p>Nombre: {{cliente.nombre}}</p>
+<a href="{% url 'ClienteDetalle' cliente.id %}">Ver cliente</a>
+
+
+{% endblock %}

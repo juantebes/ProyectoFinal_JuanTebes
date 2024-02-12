@@ -1,0 +1,14 @@
+{% extends "padre.html" %}
+
+{% block titulo %} <h2>Clientes registrados</h2>
+
+{% for x in clientes %}
+
+<ol style="list-style: none;">
+   <li>Nombre: {{x.nombre}} - Apellido: {{x.apellido}} - Dirección: {{x.direccion}} - Telefono: {{x.telefono}} </li> 
+      
+</ol>
+
+{% endfor %}
+
+{% endblock %}

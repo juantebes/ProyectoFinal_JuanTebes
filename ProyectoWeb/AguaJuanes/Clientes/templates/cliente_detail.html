@@ -1,0 +1,10 @@
+{% extends "padre.html" %}
+
+{% block titulo %} 
+<p>Nombre:{{cliente.nombre}}</p>
+<p>Apellido:{{cliente.apellido}}</p>
+<p>Direccion:{{cliente.direccion}}</p>
+<p>Telefono:{{cliente.telefono}}</p>
+<a href="{% url 'ClienteLeer' %}">Regresar</a>
+
+{% endblock %}
